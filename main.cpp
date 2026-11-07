@@ -7,7 +7,7 @@ void CountCharacters(const char str[], int &letters, int &digits, int &spaces, i
     spaces = 0;
     others = 0;
 
-    for (int i{}; str[i] != '\n'; ++i) {
+    for (int i{}; str[i] != '\0'; ++i) {
         char symbol = str[i];
         if ((symbol >= 'a' && symbol <= 'z') || (symbol >= 'A' && symbol <= 'Z')) {
             ++letters;
